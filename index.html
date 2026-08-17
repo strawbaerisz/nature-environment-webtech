@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nature and Environment Showcase</title>
+    <link rel="icon" type="image/png" href="images/catto.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Boot Strap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Boot Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <i class="bi bi-bluesky"></i>
+          Nature Through Our Lens
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#facts">Nature Facts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel-->
+    <section id="home">
+      <div id="natureCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#natureCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#natureCarousel"
+            data-bs-slide-to="1"
+            class="active"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#natureCarousel"
+            data-bs-slide-to="2"
+            class="active"
+          ></button>
+        </div>
+
+        <!-- Carousel Images -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://i.pinimg.com/1200x/80/1f/28/801f281c7da87834730091554fce28ad.jpg"
+              class="d-block w-100"
+              alt="Forest landscape with catto"
+            />
+
+            <!-- FOREST Image -->
+            <div class="carousel-caption">
+              <span class="badge">FOREST</span>
+
+              <h1>Nature Through Our Lens</h1>
+
+              <p>
+                Discover the beauty, diversity, and importance of the natural
+                world.
+              </p>
+
+              <a href="#gallery" class="btn btn-nature"> Explore Gallery </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://i.pinimg.com/736x/74/0a/b9/740ab9017ec31ad1f804707988acbd50.jpg"
+              class="d-block w-100"
+              alt="Ocean landscape with catto"
+            />
+
+            <!-- OCEAN Image -->
+            <div class="carousel-caption">
+              <span class="badge">OCEAN</span>
+
+              <h1>Where Earth Meets Water</h1>
+
+              <p>
+                Explore the peaceful beauty of oceans, beaches, and marine
+                environments.
+              </p>
+
+              <a href="#gallery" class="btn btn-nature"> Explore Gallery</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="https://i.pinimg.com/1200x/b2/5f/67/b25f672faf74629f9372d7e59514274a.jpg"
+              class="d-block w-100"
+              alt="Mountain landscape with catto"
+            />
+
+            <!-- Mountain Image -->
+
+            <div class="carousel-caption">
+              <span class="badge">MOUNTAINS</span>
+
+              <h1>Discover the Wild</h1>
+
+              <p>Experience breathtaking landscapes shaped by nature.</p>
+
+              <a href="#gallery" class="btn btn-nature"> Explore Gallery </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Previous Button -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#natureCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+
+          <span class="visually-hidden"> Previous </span>
+        </button>
+
+        <!-- Next Button -->
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#natureCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+
+          <span class="visually-hidden"> Next </span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ENVIRONMENTAL ALERT -->
+    <section class="container section-spacing">
+      <div class="alert nature-alert" role="alert">
+        <div>
+          <strong>Protect what you admire.</strong>
+
+          <p class="mb-0">
+            Every forest, ocean, mountain, and living creature plays an
+            important role in our environment. Even the tiniest organism serves
+            a purpose.
+          </p>
+        </div>
+
+        <a href="#about" class="btn btn-sm btn-outline-nature"> Learn More </a>
+      </div>
+    </section>
+
+    <!--  INTRODUCTION  -->
+    <section id="about" class="container section-spacing">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="section-label"> ABOUT THE SHOWCASE </span>
+
+          <h2>
+            Beauty worth seeing.
+            <span>Nature worth protecting.</span>
+          </h2>
+
+          <p>
+            Nature Through Our Lens is a visual showcase for our webtech
+            activity. This small webpage is dedicated to the beauty and
+            diversity of our natural environment. From peaceful forests to vast
+            oceans, every photograph tells a story about the world around us.
+          </p>
+
+          <p>
+            This gallery encourages people to appreciate nature while
+            understanding why protecting it matters.
+          </p>
+
+          <a href="#gallery" class="btn btn-nature"> Explore the Gallery </a>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="about-image">
+            <img
+              src="https://i.pinimg.com/1200x/a4/0a/74/a40a74f420c9e13f74bf6b4d94606611.jpg"
+              alt="Nature landscape"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  GALLERY -->
+    <section id="gallery" class="gallery-section section-spacing">
+      <div class="container">
+        <div class="text-center section-heading">
+          <span class="section-label"> PHOTO COLLECTION </span>
+
+          <h2>Explore the Gallery</h2>
+
+          <p>A collection of moments captured from the natural world.</p>
+        </div>
+
+        <!-- Gallery Cards -->
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card nature-card h-100">
+              <img
+                src="https://i.pinimg.com/1200x/73/5f/ab/735fab914358e5fc624cff41a5ad9342.jpg"
+                class="card-img-top"
+                alt="Green forest"
+              />
+
+              <div class="card-body">
+                <span class="badge nature-badge"> FOREST </span>
+
+                <h3 class="card-title">Into the Forest</h3>
+
+                <p class="card-text">
+                  Forests provide homes for countless species and help maintain
+                  balance in our environment.
+                </p>
+
+                <button
+                  class="btn btn-nature btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#forestModal"
+                >
+                  View Image
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card nature-card h-100">
+              <img
+                src="https://i.pinimg.com/736x/8d/5d/fb/8d5dfba6e3234a959e26cfb92f67b28e.jpg"
+                class="card-img-top"
+                alt="Blue ocean"
+              />
+
+              <div class="card-body">
+                <span class="badge nature-badge"> OCEAN </span>
+
+                <h3 class="card-title">Endless Blue</h3>
+
+                <p class="card-text">
+                  Oceans cover most of our planet and support an incredible
+                  variety of life.
+                </p>
+
+                <button
+                  class="btn btn-nature btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#oceanModal"
+                >
+                  View Image
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card nature-card h-100">
+              <img
+                src="https://i.pinimg.com/1200x/b1/c6/01/b1c601cd17e1ff6cb11f91fb5a6029b0.jpg"
+                class="card-img-top"
+                alt="Mountain landscape"
+              />
+
+              <div class="card-body">
+                <span class="badge nature-badge"> MOUNTAIN </span>
+
+                <h3 class="card-title">Above the Clouds</h3>
+
+                <p class="card-text">
+                  Mountains create unique ecosystems and provide important
+                  freshwater resources.
+                </p>
+
+                <button
+                  class="btn btn-nature btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#mountainModal"
+                >
+                  View Image
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card nature-card h-100">
+              <img
+                src="https://i.pinimg.com/1200x/fe/42/1b/fe421b3db6ee16cf960cebf2a5f910ab.jpg"
+                class="card-img-top"
+                alt="Wild flowers"
+              />
+
+              <div class="card-body">
+                <span class="badge nature-badge"> PLANTS </span>
+
+                <h3 class="card-title">Colors of Life</h3>
+
+                <p class="card-text">
+                  Plants provide food, oxygen, shelter, and countless benefits
+                  to ecosystems.
+                </p>
+
+                <button
+                  class="btn btn-nature btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#flowerModal"
+                >
+                  View Image
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card nature-card h-100">
+              <img
+                src="https://i.pinimg.com/736x/51/af/92/51af9269d6324033c9ad92358c762cac.jpg"
+                class="card-img-top"
+                alt="Wildlife"
+              />
+
+              <div class="card-body">
+                <span class="badge nature-badge"> WILDLIFE </span>
+
+                <h3 class="card-title">Life in the Wild</h3>
+
+                <p class="card-text">
+                  Wildlife contributes to healthy ecosystems and represents the
+                  incredible diversity of life.
+                </p>
+
+                <button
+                  class="btn btn-nature btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#wildlifeModal"
+                >
+                  View Image
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card nature-card h-100">
+              <img
+                src="https://i.pinimg.com/736x/ab/52/7b/ab527b4c01f9b49f51d9e9e6ee5e4207.jpg"
+                class="card-img-top"
+                alt="Sunset over nature"
+              />
+
+              <div class="card-body">
+                <span class="badge nature-badge"> LANDSCAPE </span>
+
+                <h3 class="card-title">Golden Hour</h3>
+
+                <p class="card-text">
+                  Natural landscapes remind us of the beauty that exists beyond
+                  our everyday surroundings.
+                </p>
+
+                <button
+                  class="btn btn-nature btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#sunsetModal"
+                >
+                  View Image
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED MESSAGE -->
+    <section class="message-section section-spacing">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2>
+              "We won't have a society if we destroy the environment." - John
+              Muir
+            </h2>
+
+            <p>
+              Appreciating nature is the first step toward understanding our
+              responsibility to protect it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCORDION -->
+    <section id="facts" class="container section-spacing">
+      <div class="text-center section-heading">
+        <span class="section-label"> LEARN MORE </span>
+
+        <h2>Nature Facts</h2>
+
+        <p>Learn more about the environments featured in our gallery.</p>
+      </div>
+
+      <div class="accordion nature-accordion" id="natureAccordion">
+        <!-- Accordion 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#factOne"
+            >
+              Why are forests important?
+            </button>
+          </h2>
+
+          <div
+            id="factOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#natureAccordion"
+          >
+            <div class="accordion-body">
+              Forests are vital because they regulate the Earth’s climate,
+              sustain biodiversity, and provide resources for human survival.
+              The United Nations Environment Programme (UNEP) notes that forests
+              absorb about 2.6 billion tons of carbon dioxide annually, acting
+              as powerful carbon sinks that slow global warming. The World
+              Wildlife Fund (WWF) emphasizes that forests are home to over 80%
+              of terrestrial species, making them irreplaceable habitats for
+              countless plants and animals. Without forests, ecosystems would
+              collapse, and species extinction rates would accelerate
+              dramatically. <br /><br />Beyond ecology, forests directly support
+              human life and well-being. The Food and Agriculture Organization
+              (FAO) reports that around 1.6 billion people depend on forests for
+              food, medicine, fuel, and shelter. Forests also regulate the water
+              cycle, with nearly half of the world’s largest cities relying on
+              forested watersheds for clean drinking water. According to UNEP,
+              spending time in forests improves cardiovascular health, reduces
+              stress, and lowers risks of respiratory diseases, while
+              deforestation increases the risk of zoonotic diseases that can
+              lead to pandemics. In short, forests are lifelines for
+              biodiversity, climate stability, human livelihoods, and global
+              health.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#factTwo"
+            >
+              Why are oceans important?
+            </button>
+          </h2>
+
+          <div
+            id="factTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#natureAccordion"
+          >
+            <div class="accordion-body">
+              Oceans are fundamental to life on Earth because they regulate the
+              climate, produce oxygen, and sustain biodiversity. The United
+              Nations Environment Programme (UNEP) explains that oceans absorb
+              about 30% of carbon dioxide emissions and capture 90% of excess
+              heat from the atmosphere, making them the planet’s largest climate
+              regulator. They also produce over 50% of the world’s oxygen
+              through phytoplankton, tiny marine plants that act as the lungs of
+              the Earth. According to the World Wildlife Fund (WWF), oceans are
+              home to nearly 80% of all life on Earth, from coral reefs to
+              deep-sea ecosystems, making them biodiversity hotspots that are
+              critical for ecological balance. <br /><br />Beyond environmental
+              functions, oceans directly support human survival and economies.
+              The Food and Agriculture Organization (FAO) reports that more than
+              3 billion people depend on oceans for their livelihoods,
+              particularly through fisheries and coastal industries. Oceans also
+              drive the global water cycle, supplying rainfall and moderating
+              weather patterns, which is vital for agriculture and freshwater
+              systems. UNEP highlights that healthy oceans provide food
+              security, medicine, and coastal protection, while degraded oceans
+              increase risks such as rising sea levels and stronger storms.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#factThree"
+            >
+              How can we help the environment?
+            </button>
+          </h2>
+
+          <div
+            id="factThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#natureAccordion"
+          >
+            <div class="accordion-body">
+              We can help the environment by making conscious choices that
+              reduce waste, conserve resources, and restore ecosystems. The
+              United Nations Environment Programme (UNEP) highlights that
+              restoring degraded lands and forests is critical for biodiversity
+              and climate resilience, while everyday actions like eating more
+              plant-based meals, biking instead of driving, and switching to
+              energy-efficient appliances can significantly lower carbon
+              footprints. The World Wildlife Fund (WWF) stresses that cutting
+              single-use plastics and supporting recycling initiatives are vital
+              to reducing pollution, especially in oceans where millions of tons
+              of plastic accumulate each year. <br><br>According to the Food and
+              Agriculture Organization (FAO), supporting local and sustainable
+              practices—such as buying local produce, conserving water, and
+              planting native trees—strengthens communities while protecting
+              ecosystems. In short, small daily actions combined with community
+              efforts can collectively safeguard the planet for future
+              generations.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-4 justify-content between">
+      <div class="col-md-6 col-lg-5">
+        <h3>Nature Through Our Lens</h3>
+        <p>
+          A webtech showcase gallery celebrating the beauty, diversity, and importance of nature.
+        </p>
+      </div>
+
+      <div class="col-md-3 col-lg-2 ms-auto">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#facts">Nature Facts</a></li>
+        </ul>
+      </div>
+    </div> 
+
+    <hr />
+
+    <div class="footer-bottom">
+      <p class="mb-0">
+        © 2026 Nature Through Our Lens. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+    <!-- MODALS-->
+
+    <!-- Forest Modal -->
+    <div class="modal fade" id="forestModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="forestModalLabel">Into the Forest</h2>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img
+              src="https://i.pinimg.com/1200x/73/5f/ab/735fab914358e5fc624cff41a5ad9342.jpg"
+              class="img-fluid"
+              alt="Green forest"
+            />
+
+            <p class="mt-3">
+              Forest ecosystems support biodiversity and help maintain balance
+              within the environment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ocean Modal -->
+    <div class="modal fade" id="oceanModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="oceanModalLabel">Endless Blue</h2>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img
+              src="https://i.pinimg.com/736x/8d/5d/fb/8d5dfba6e3234a959e26cfb92f67b28e.jpg"
+              class="img-fluid"
+              alt="Blue ocean"
+            />
+
+            <p class="mt-3">
+              Oceans are home to a huge variety of marine life and play an
+              important role in Earth's climate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mountain Modal -->
+    <div class="modal fade" id="mountainModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="mountainModalLabel">
+              Above the Clouds
+            </h2>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img
+              src="https://i.pinimg.com/1200x/b1/c6/01/b1c601cd17e1ff6cb11f91fb5a6029b0.jpg"
+              class="img-fluid"
+              alt="Mountain landscape"
+            />
+
+            <p class="mt-3">
+              Mountain environments contain unique ecosystems and are important
+              sources of freshwater.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flower Modal -->
+    <div class="modal fade" id="flowerModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="flowerModalLabel">Colors of Life</h2>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img
+              src="https://i.pinimg.com/1200x/fe/42/1b/fe421b3db6ee16cf960cebf2a5f910ab.jpg"
+              class="img-fluid"
+              alt="Wild flowers"
+            />
+
+            <p class="mt-3">
+              Plants are essential to ecosystems because they provide food and
+              habitats while producing oxygen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wildlife Modal -->
+    <div class="modal fade" id="wildlifeModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="wildlifeModalLabel">
+              Life in the Wild
+            </h2>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img
+              src="https://i.pinimg.com/736x/51/af/92/51af9269d6324033c9ad92358c762cac.jpg"
+              class="img-fluid"
+              alt="Wildlife"
+            />
+
+            <p class="mt-3">
+              Wildlife is an essential part of healthy and balanced ecosystems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sunset Modal -->
+    <div class="modal fade" id="sunsetModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="sunsetModalLabel">Golden Hour</h2>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img
+              src="https://i.pinimg.com/736x/ab/52/7b/ab527b4c01f9b49f51d9e9e6ee5e4207.jpg"
+              class="img-fluid"
+              alt="Sunset over nature"
+            />
+
+            <p class="mt-3">
+              Natural landscapes offer moments of beauty that encourage us to
+              appreciate our environment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
