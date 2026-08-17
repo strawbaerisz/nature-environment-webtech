@@ -1,4 +1,4 @@
-/* GENERAL*/
+/*  GENERAL */
 
 html {
     scroll-behavior: smooth;
@@ -109,7 +109,7 @@ img {
 }
 
 
-/* BUTTONS */
+/*  BUTTONS */
 
 .btn-nature {
     background-color: #315b3c;
@@ -144,7 +144,7 @@ img {
 }
 
 
-/* GENERAL SECTIONS */
+/*  GENERAL SECTIONS */
 
 .section-spacing {
     padding-top: 90px;
@@ -161,7 +161,7 @@ img {
 }
 
 .section-heading {
-    margin-bottom: 20px;
+    margin-bottom: 45px;
 }
 
 .section-heading h2 {
@@ -175,7 +175,7 @@ img {
 }
 
 
-/*  ALERT */
+/* ALERT */
 
 .nature-alert {
     background-color: #e7eee3;
@@ -199,7 +199,11 @@ img {
 }
 
 
-/* ABOUT SECTION */
+/* ABOUT*/
+
+#about {
+    background-color: #f7f8f3;
+}
 
 #about h2 {
     font-size: 3.2rem;
@@ -215,6 +219,7 @@ img {
     height: 500px;
     overflow: hidden;
     border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(35, 60, 42, 0.08);
 }
 
 .about-image img {
@@ -229,10 +234,64 @@ img {
 }
 
 
+/* CATEGORIES*/
+
+#categories {
+    background-color: #edf1e9;
+}
+
+.category-card {
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #f7f8f3;
+    box-shadow: 0 8px 25px rgba(35, 60, 42, 0.07);
+    transition: 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(35, 60, 42, 0.13);
+}
+
+.category-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.category-card .card-body {
+    padding: 25px;
+}
+
+.category-card .card-title {
+    color: #26382c;
+    font-size: 1.6rem;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.category-card .card-text {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.category-badge {
+    display: inline-block;
+    background-color: #dce8d8;
+    color: #315b3c;
+    font-size: 0.65rem;
+    letter-spacing: 1.5px;
+    padding: 7px 11px;
+    border-radius: 20px;
+}
+
+
 /* GALLERY */
 
 .gallery-section {
-    background-color: #edf1e9;
+    background-color: #f7f8f3;
 }
 
 .gallery-buttons {
@@ -242,7 +301,7 @@ img {
 }
 
 
-/*  CARDS */
+/* CARDS */
 
 .nature-card {
     border: none;
@@ -286,7 +345,7 @@ img {
 }
 
 
-/*MESSAGE SECTION */
+/*  MESSAGE SECTION */
 
 .message-section {
     background-color: #315b3c;
@@ -308,7 +367,7 @@ img {
 }
 
 
-/* ACCORDION */
+/*ACCORDION */
 
 .nature-accordion {
     max-width: 900px;
@@ -371,6 +430,100 @@ img {
 }
 
 
+/* CONTACT */
+
+#contact {
+    background-color: #edf1e9;
+}
+
+#contact h2 {
+    font-size: 3.2rem;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+#contact .section-label {
+    color: #52785a;
+}
+
+
+/* Contact information */
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.contact-item > i {
+    font-size: 1.2rem;
+    color: #315b3c;
+    background-color: #dce8d8;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.contact-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 2px;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+/* Contact form */
+
+.contact-form {
+    background-color: #f7f8f3;
+    padding: 35px;
+    border-radius: 15px;
+    border: 1px solid #dce5d8;
+    box-shadow: 0 8px 25px rgba(35, 60, 42, 0.07);
+}
+
+.contact-form .form-label {
+    color: #315b3c;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid #d5ded2;
+    background-color: #ffffff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: #26382c;
+}
+
+.form-control::placeholder {
+    color: #9aa59b;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #52785a;
+    box-shadow: 0 0 0 0.2rem rgba(82, 120, 90, 0.15);
+}
+
+
 /* FOOTER */
 
 footer {
@@ -387,7 +540,7 @@ footer h3 {
 footer h4 {
     font-size: 1rem;
     margin-bottom: 10px;
-    text-align: right;
+    text-align: left;
 }
 
 footer p {
@@ -400,9 +553,10 @@ footer p {
     list-style: none;
     padding: 0;
     margin: 0;
+
     display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 15px;
 }
 
